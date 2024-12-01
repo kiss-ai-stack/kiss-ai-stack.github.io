@@ -1,8 +1,8 @@
-title: Just the Docs Template
-description: A starter template for a Jeykll site using the Just the Docs theme!
-theme: just-the-docs
-
-url: https://just-the-docs.github.io
-
-aux_links:
-  Template Repository: https://github.com/just-the-docs/just-the-docs-template
+name: KISS AI Stack
+description: A lightweight framework for creating on-demand AI agents with ease, using a straightforward YAML configuration. No need to deal with unnecessary boilerplate—built to stay simple and efficient, adhering to the KISS principle (Keep It Simple, Stupid).
+url: https://kiss-ai-stack.github.io
+permalink: pretty
+sass:
+  style: compressed
+version: 4.0.0
+og_image: https://raw.githubusercontent.com/mdo/code-guide/gh-pages/code-guide-social.png

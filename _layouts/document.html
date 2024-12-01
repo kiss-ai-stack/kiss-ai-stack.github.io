@@ -1,0 +1,153 @@
+---
+layout: default
+---
+
+<div class="container-fluid docs-container">
+  <div class="row">
+    <!-- Sidebar Navigation -->
+    <div class="col-md-3 col-lg-2 sidebar-wrapper">
+      <nav id="sidebar" class="sidebar">
+        <ul class="nav flex-column">
+          {% assign sidebar = site.data.sidebar.docs %}
+          {% for section in sidebar %}
+            <li class="nav-item">
+              {% assign page_url = page.url | downcase %}
+              {% assign section_url = section.url | downcase %}
+              <a
+                class="nav-link d-flex justify-content-between align-items-center {% if page_url == section_url %}active{% endif %}"
+                href="{{ section.url }}"
+                {% if section.subsections %}
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-{{ forloop.index }}"
+                  aria-expanded="false"
+                  aria-controls="collapse-{{ forloop.index }}"
+                {% endif %}
+              >
+                <span>
+                  {{ section.title }}
+                </span>
+                {% if section.subsections %}
+                  <i class="fas fa-chevron-down"></i>
+                {% endif %}
+              </a>
+
+              {% if section.subsections %}
+                <div
+                  id="collapse-{{ forloop.index }}"
+                  class="collapse {% if page_url contains section_url %}show{% endif %}"
+                  data-bs-parent="#sidebar"
+                >
+                  <ul class="nav flex-column ps-4">
+                    {% for subsection in section.subsections %}
+                      <li class="nav-item">
+                        {% assign subsection_url = subsection.url | downcase %}
+                        <a class="nav-link subsection-font {% if page_url == subsection_url %}active{% endif %}" href="{{ subsection.url }}">
+                          {{ subsection.title }}
+                        </a>
+                      </li>
+                    {% endfor %}
+                  </ul>
+                </div>
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Main Content Area -->
+    <main class="col-md-9 ms-sm-auto col-lg-10 main-content">
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+        <h1 class="h2">{{ page.title }}</h1>
+      </div>
+
+      <div class="documentation-content">
+          {{ content }}
+      </div>
+      <br><br><br>
+      {% include footer.html %}
+    </main>
+  </div>
+</div>
+
+
+<style>
+  .docs-container {
+    padding-top: 3%;
+  }
+
+  .sidebar-wrapper {
+    position: fixed;
+    top: 1%;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+    z-index: 100;
+    width: 16.666%;
+  }
+
+  .sidebar {
+    height: 100%;
+    padding-top: 7rem;
+    overflow-y: auto;
+    background-color: #f8f9fa;
+  }
+
+  .sidebar .nav-link {
+    font-weight: 500;
+    color: #333;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+  }
+
+  .sidebar .nav-link[aria-expanded="true"] i.fas {
+    transform: rotate(180deg);
+  }
+
+  .sidebar .nav-link i.fas {
+    transition: transform 0.2s ease;
+    position: relative;
+    top: 0;
+  }
+
+  .sidebar .nav-link:hover {
+    color: var(--primary-color);
+  }
+
+  .sidebar .nav-link.active {
+    color: var(--primary-color);
+    font-weight: 600;
+  }
+
+  .subsection-font {
+    font-size: 0.9rem !important;
+  }
+
+  .main-content {
+    margin-left: auto;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .documentation-content {
+    max-width: 95%;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 767.98px) {
+    .sidebar-wrapper {
+      position: static;
+      height: auto;
+      width: 100%;
+    }
+
+    .sidebar {
+      position: static;
+      border-right: none;
+    }
+
+    .main-content {
+      margin-left: 0;
+    }
+  }
+</style>

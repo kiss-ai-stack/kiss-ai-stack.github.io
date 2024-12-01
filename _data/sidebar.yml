@@ -1,0 +1,8 @@
+docs:
+  - title: Overview
+    url: /docs/
+    subsections:
+      - title: Introduction
+        url: /docs/
+      - title: Core/AI Agent Bootstrapper
+        url: /docs/ai-stack-core/
