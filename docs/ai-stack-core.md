@@ -9,7 +9,7 @@ This section is all about the engine of the stack—the part that makes your AI 
 ### Core Workflow
 The diagram below shows how the Core workflow operates step-by-step to process user queries and documents:
 <br><br>
-![core workflow](/assets/images/core-workflow.png){:style="display:block; margin-left:auto; margin-right:auto"} <br><br>
+![core workflow](/assets/images/core-workflow.png){:style="display:block; margin-left:auto; margin-right:auto; width: 90%"} <br><br>
 
 Here’s what happens under the hood:
 
@@ -44,20 +44,15 @@ Relevant chunks from the database are fetched when needed(RAG tools).
 
 #### What Makes the Core Special?
 The Core is built to keep things easy, fast, and efficient. Here’s why you’ll love it:
+
+- **Zero boilerplate**: Say goodbye to repetitive setup code. Just define your agent in a simple YAML file.  
+- **Dynamic tooling**: Automatically loads and configures tools like RAG for document retrieval or prompt-based models for queries.  
+- **Autonomous AI powered decision-making**: The built-in decision maker dynamically selects the best tool for each query, optimizing performance.  
+- **Vector database adaptors**: Easily store and retrieve private document embeddings with Chroma.  
+- **AI/LLM client adaptors**: Seamlessly connect to providers like OpenAI with minimal setup.  
+- **Automatic dependency resolver**: Based on the tools dependencies will be resolved automatically in the first run.
+- **Temporary/presistant RAG agents**: Cleanup stored documents after temporary sessions.
+- **Standalone component**: Core is totally isolated from other components. You may use it standalone in your apps/server developments.
+
+KISS AI Stack Core focuses on keeping it simple while delivering powerful AI capabilities with minimal effort.
 <br><br>
-
-#### Best for:
-- **Tool Building**: Quickly add tools like RAG or prompt models to your agent.
-- **Document Processing**: Store and retrieve knowledge from your own datasets.
-- **AI Classification**: Automatically decide how to handle a query with minimal setup.
-<br><br>
-
-#### Features:
-- **No Boilerplate**: All you need is a YAML file to configure your agent.
-- **Built-in Support**: Use RAG and prompt tools without worrying about complex logic.
-- **Integrated Vector DB**: Store document embeddings for fast retrieval.
-- **AI Client Flexibility**: Connect to any supported AI service like OpenAI.
-<br><br>
-
-
-Start leveraging the Core of the KISS AI Stack and let it handle the complexities while you focus on what matters—delivering value through AI!

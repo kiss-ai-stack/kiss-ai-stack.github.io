@@ -10,7 +10,7 @@ Welcome to the **KISS AI Stack Overview** page! This section explains the main p
 
 Below graph is showing how the main components of the KISS AI Stack are connected:
 <br><br>
-![components](/assets/images/components.png){:style="display:block; margin-left:auto; margin-right:auto"}
+![components](/assets/images/comp_flow.svg){:style="display:block; margin-left:auto; margin-right:auto; width: 70%"}
 <br><br>
 ### Why "KISS AI Stack"?
 The name comes from the principle **"Keep It Simple, Stupid" (KISS)**. The stack is all about simplicity without cutting corners, letting you work on AI assisted solutions with minimal effort.
