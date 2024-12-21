@@ -45,3 +45,7 @@ Incoming queries are classified, and the most suitable tool is chosen. For RAG t
 
 ##### Step 9: Retrieve Relevant Chunks
 When required, relevant data chunks are fetched from the vector database to enhance responses.
+
+<br><br>
+
+___

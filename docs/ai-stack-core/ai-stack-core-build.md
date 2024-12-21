@@ -58,7 +58,7 @@ if __name__ == "__main__":
 
 
 
-## Step 2: Understanding the `AgentStack` Class
+## Step 2: Understanding the **AgentStack** Class
 
 The `AgentStack` is a centralized class for managing AI stacks. Below are its key features and methods:
 
@@ -74,31 +74,31 @@ The `AgentStack` is a centralized class for managing AI stacks. Below are its ke
 
 ### Methods Overview
 
-#### 1. `bootstrap_stack`
+#### 1. bootstrap_stack
 Initializes a stack session with optional persistence.
 ```python
 await AgentStack.bootstrap_stack(stack_id: str, temporary: Optional[bool] = True)
 ```
 
-#### 2. `generate_answer`
+#### 2. generate_answer
 Processes a query and generates a structured response.
 ```python
 response = await AgentStack.generate_answer(stack_id: str, query: Union[str, Dict, List])
 ```
 
-#### 3. `store_data`
+#### 3. store_data
 Stores documents and metadata in the vector database.
 ```python
 stored_documents = await AgentStack.store_data(stack_id: str, files: List[str], metadata: Optional[Dict[str, Any]] = None)
 ```
 
-#### 4. `get_stack`
+#### 4. get_stack
 Retrieves an active stack instance by its ID.
 ```python
 stack = AgentStack.get_stack(stack_id: str)
 ```
 
-#### 5. `destroy_stack`
+#### 5. destroy_stack
 Closes a stack session and cleans up resources.
 ```python
 await AgentStack.destroy_stack(stack_id: str, cleanup: bool = False)
@@ -136,3 +136,7 @@ await AgentStack.destroy_stack(stack_id: str, cleanup: bool = False)
 
 ### Debugging Logs
 Logs are generated to help debug issues. Check the `LOG` output for details.
+
+<br><br>
+
+___

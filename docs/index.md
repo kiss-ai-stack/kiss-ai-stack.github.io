@@ -53,4 +53,8 @@ If you’re looking for the quickest way to leverage the power of the KISS AI St
 
 
 
-Let’s keep it simple, powerful, and fun. Dive in and start building RAG-powered software! 🎉
+Let’s keep it simple, powerful, and fun. Dive in and start building RAG-powered software!
+
+<br><br>
+
+___
