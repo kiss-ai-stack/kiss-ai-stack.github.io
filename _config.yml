@@ -1,5 +1,5 @@
 name: KISS AI Stack
-description: A lightweight framework for creating on-demand AI agents with ease, using a straightforward YAML configuration. No need to deal with unnecessary boilerplate—built to stay simple and efficient, adhering to the KISS principle (Keep It Simple, Stupid).
+description: A lightweight framework for building Retrieval-Augmented Generation (RAG) solutions with ease, using a straightforward YAML configuration. No need to deal with unnecessary boilerplate—built to stay simple and efficient, adhering to the KISS principle (Keep It Simple, Stupid).
 url: https://kiss-ai-stack.github.io
 permalink: pretty
 sass:

@@ -3,31 +3,54 @@ layout: document
 title: Overview
 ---
 
-Welcome to the **KISS AI Stack Overview** page! This section explains the main parts of the KISS AI Stack and how they work together to create AI-powered applications in a simple and efficient way.
-<br><br>
+Discover the **KISS AI Stack**—a thoughtfully engineered framework designed to enable **Retrieval-Augmented Generation (RAG)** solutions. This stack allows you to seamlessly combine multiple LLMs, each optimized for specific tasks, into a unified system. With its clean, no-boilerplate approach, it frees developers from repetitive code and lets them focus on building RAG-powered applications.
 
-### Main Components
 
-Below graph is showing how the main components of the KISS AI Stack are connected:
-<br><br>
-![components](/assets/images/comp_flow.svg){:style="display:block; margin-left:auto; margin-right:auto; width: 70%"}
-<br><br>
-### Why "KISS AI Stack"?
-The name comes from the principle **"Keep It Simple, Stupid" (KISS)**. The stack is all about simplicity without cutting corners, letting you work on AI assisted solutions with minimal effort.
-<br><br>
 
-#### Best for:
+## Why the Name "KISS AI Stack"?
 
-- **Chatbots**: Quickly create interactive agents for conversations.
-- **Query Systems**: Handle user queries, whether based on data or text prompts.
-- **Sensitive Data and In-House Solutions**: Easily set up private AI systems for secure, domain-specific tasks (like RAG).
-<br><br>
+The name is inspired by the timeless principle, **"Keep It Simple, Stupid" (KISS)**. True to its name, this stack emphasizes simplicity and efficiency. No unnecessary complexities, just powerful tools to create RAG solutions with minimal overhead. Perfect for developers who value clarity and speed.
 
-#### Key Features:
 
-- **Dynamic Tools**: RAG and prompt tools are created as needed, so the agent can handle whatever comes its way.
-- **Simple Setup**: Define your agent’s behavior in a YAML file, without writing a lot of code.
-- **Easy Integration**: Connect seamlessly with other parts of the KISS AI Stack for a complete solution.
-<br><br>
 
-Start building your AI-powered applications with KISS AI Stack today! 🎉
+## Main Components
+
+Below is a visualization of how the key components of the **KISS AI Stack** come together to form a cohesive system:  
+
+![KISS AI Stack Components](/assets/images/comp_flow.svg){:style="display:block; margin-left:auto; margin-right:auto; width: 70%;"}
+
+
+### KISS AI Stack Core
+
+The **Core** is the heart of the stack, offering essential tools for RAG-driven development:  
+- **AI/LLM Clients**: Interface with leading Large Language Models.  
+- **Vector Database Clients**: Handle embeddings and retrieval seamlessly.  
+- **Prompt & RAG Tools**: Simplify Retrieval-Augmented Generation (RAG) workflows with a "no more, no less" philosophy.  
+- **Autonomous Decision Maker**: Build adaptable workflows capable of informed, independent actions.  
+
+*Bonus*: You can use the Core as a standalone library for building lightweight RAG solutions, with no dependency on the server stub or SDK.
+
+
+
+### KISS AI Stack Server
+
+The **Server** provides a robust backend layer, offering:  
+- **Abstracted RAG APIs**: RESTful or WebSocket-based for seamless integration.  
+- **Lifecycle Event Handling**: Manage RAG application states with ease.  
+- **Session-based Instances**: Dedicated sessions with isolated document stores(tenant based + collection based) and state management.
+
+With these features, you can focus on functionality without worrying about backend complexity.
+
+
+
+### KISS AI Stack Client SDK
+
+The **Client SDK** bridges the gap between your application and the server. It includes:  
+- Ready-to-use functions for server communication.  
+- Tools to interact with RAG solutions.  
+
+If you’re looking for the quickest way to leverage the power of the KISS AI Stack, the SDK is your go-to solution.
+
+
+
+Let’s keep it simple, powerful, and fun. Dive in and start building RAG-powered software! 🎉

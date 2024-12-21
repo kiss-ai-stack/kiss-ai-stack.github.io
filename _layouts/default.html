@@ -20,32 +20,121 @@
     <meta property="og:image:width" content="2000">
     <meta property="og:image:height" content="1000">
 
+
     <style>
       :root {
         --primary-color: #008600;
+        --secondary-color: #333333;
+        --light-bg: #f9f9f9;
         --font-primary: 'Inter', sans-serif;
-      }
-      .bg-primary {
-        background-color: var(--primary-color) !important;
-      }
-      .text-primary {
-        color: var(--primary-color) !important;
-      }
-      .btn-primary {
-        background-color: var(--primary-color) !important;
-        border-color: var(--primary-color) !important;
+        --bs-code-color: #333333;
+        --bs-code-bg: #f1f5f9;
+        --bs-code-border: #e2e8f0;
       }
 
       body {
         font-family: var(--font-primary);
-      }
-
-      .card-title {
-        font-weight: 600;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        color: var(--secondary-color);
+        background-color: var(--light-bg);
       }
 
       h1, h2, h3, h4, h5, h6 {
         font-family: var(--font-primary);
+        margin-top: 2.5rem;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        margin-bottom: 1rem;
+        font-size: 1rem;
+      }
+
+      a {
+        color: var(--primary-color);
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: none;
+      }
+
+      .text-primary {
+        color: var(--primary-color) !important;
+      }
+
+      .btn-primary {
+        background-color: var(--primary-color) !important;
+        border-color: var(--primary-color) !important;
+        color: #fff;
+      }
+
+      .btn-primary:hover {
+        background-color: darkgreen !important;
+        border-color: darkgreen !important;
+      }
+
+      .container-fluid {
+        padding: 1rem 2rem;
+      }
+
+      li {
+        padding-bottom: 0.5rem;
+      }
+      ul {
+        padding-top: 0.5rem;
+      }
+
+      .nav-item {
+        padding-bottom: 0;
+        padding-top: 0;
+      }
+
+      pre {
+        background-color: var(--bs-code-bg);
+        color: var(--bs-code-color);
+        padding: 1rem;
+        border-radius: 0.375rem;
+        border: 1px solid var(--bs-code-bg);
+        overflow-x: auto;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 0.9rem;
+      }
+
+      code {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 0.9rem;
+        background-color: var(--bs-code-bg);
+        color: var(--bs-code-color);
+        padding: 0.4rem 0 0.4rem 0;
+        border-radius: 0.25rem;
+        border: 1px transparent var(--bs-code-border);
+      }
+
+      .header-spacing {
+        padding: 2rem 0;
+      }
+
+      .section {
+        padding: 2rem 0;
+        background-color: #fff;
+        border-radius: 0.375rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin-bottom: 2rem;
+      }
+
+      .section-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+      }
+
+      .footer {
+        padding: 1rem 0;
+        color: #fff;
+        text-align: center;
       }
     </style>
   </head>
