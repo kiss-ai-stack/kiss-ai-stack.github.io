@@ -1,7 +1,7 @@
 docs:
   - title: Overview
     url: /docs/
-  - title: KISS Core
+  - title: Core
     url: /docs/ai-stack-core/
     subsections:
         - title: Overview
@@ -10,7 +10,9 @@ docs:
           url: /docs/ai-stack-core/ai-stack-core-config/
         - title : Build a stack
           url: /docs/ai-stack-core/ai-stack-core-build/
-  - title: KISS Server Stub
+  - title: Server Stub
     url: /docs/ai-stack-server/
-  - title: KISS Python Client SDK
+  - title: Python Client SDK
     url: /docs/ai-stack-python-sdk/
+  - title: JS Client SDK
+    url: /docs/ai-stack-js-sdk/
